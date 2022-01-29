@@ -19,27 +19,22 @@ main {
 }
 
 nav {
-    /* display: flex; */
+    display: flex;
+    align-content: flex-start;
     grid-column: 1/-1;
-    background-color: black;
+    color: white;
 }
 
 nav>img {
     background-color: yellow;
     justify-content: flex-end;
     width: auto;
-    position: absolute;
-    /* top: 50px; */
     padding-top: 2em;
 }
 
 ul {
     list-style: none;
-    /* display: none; */
-    margin: 0;
-    padding: 0;
-    border: 2px solid magenta;
-    height: 100%;
+
 }
 
 main {
@@ -52,6 +47,11 @@ main {
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+a:hover,a:focus{
+    cursor: pointer;
 }
 
 .hero-section {
