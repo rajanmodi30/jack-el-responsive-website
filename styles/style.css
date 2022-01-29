@@ -193,6 +193,11 @@ footer>img {
         grid-row: 3;
     }
 
+    .main-about-heading {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
     footer>img {
         margin-left: 0;
         margin-right: 0;
