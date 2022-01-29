@@ -112,14 +112,15 @@ a {
 .box-image {
     width: 95%;
     height: auto;
-    box-shadow: 5px 5px black, 10px 10px yellow;
+    box-shadow: 5px 5px black, 13px 13px yellow;
 }
 
-.main-about-heading{
+.main-about-heading {
     font-weight: bold;
     box-shadow: inset -0px -0.5em yellow;
 
 }
+
 footer {
     background-color: #ebebeb;
     padding: 1.5em;
@@ -196,4 +197,38 @@ footer>img {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .single-section {
+        padding: 2em;
+    }
+
+    .single-section-child {
+        width: 50%;
+        margin: auto;
+    }
+
+    .box-image {
+        width: auto;
+        height: auto;
+        grid-column: 2;
+        box-shadow: 5px 5px black, 10px 10px yellow;
+    }
+
+
+    .main-about {
+        display: grid;
+        grid-template: auto auto/minmax(1em, 1fr)auto auto;
+        column-gap: 2rem;
+        align-items: flex-start;
+        justify-content: start;
+        align-content: flex-start;
+    }
+
+
+
+    .second-row-about {
+        grid-column: 3;
+    }
+
+
 }
