@@ -15,20 +15,27 @@ main {
 }
 
 nav {
-    display: flex;
+    /* display: flex; */
     grid-column: 1/-1;
+    background-color: black;
 }
-
 
 nav>img {
     background-color: yellow;
     justify-content: flex-end;
     width: auto;
+    position: absolute;
+    /* top: 50px; */
+    padding-top: 2em;
 }
 
 ul {
     list-style: none;
-    display: none;
+    /* display: none; */
+    margin: 0;
+    padding: 0;
+    border: 2px solid magenta;
+    height: 100%;
 }
 
 main {
@@ -39,6 +46,9 @@ main {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
 
 .hero-section {
     display: grid;
@@ -76,6 +86,14 @@ main {
     text-align: center;
 }
 
+.single-section {
+    display: grid;
+    grid-template: auto/auto;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+}
+
 .selected {
     font-weight: 700;
     border-bottom: 4px solid yellow;
@@ -85,6 +103,23 @@ main {
     font-weight: bold;
 }
 
+.main-about {
+    padding: 1em;
+    display: grid;
+    grid-template: auto auto auto/auto;
+}
+
+.box-image {
+    width: 95%;
+    height: auto;
+    box-shadow: 5px 5px black, 10px 10px yellow;
+}
+
+.main-about-heading{
+    font-weight: bold;
+    box-shadow: inset -0px -0.5em yellow;
+
+}
 footer {
     background-color: #ebebeb;
     padding: 1.5em;
@@ -104,15 +139,15 @@ footer>img {
 }
 
 @media only screen and (min-width: 600px) {
-
     ul {
         list-style: none;
         display: flex;
     }
 
-li{
-    padding: 0 1em;
-}
+    li {
+        padding: 0 4em;
+    }
+
     .section-info {
         grid-template: auto/ minmax(1em, 1fr) auto auto auto;
         align-items: flex-start;
