@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -144,13 +148,24 @@ form {
     grid-template-rows: repeat(6, auto);
     row-gap: 0.75em;
 }
-input{
+
+input {
     padding: 0.75em 0;
 }
 
-.btn-send{
+.btn-send {
     background-color: yellow;
     align-self: end;
+}
+
+.main-contact {
+    padding: 1.5em;
+    display: grid;
+    grid-template: auto auto auto/auto;
+}
+
+.contact-touch {
+    grid-row: 2;
 }
 
 @media only screen and (min-width: 600px) {
@@ -243,11 +258,46 @@ input{
         align-content: flex-start;
     }
 
+    .main-contact {
+        display: grid;
+        grid-template: auto auto/1em minmax(500px, 600px) minmax(500px, 650px);
+        column-gap: 2rem;
+        align-items: flex-start;
+        justify-content: start;
+        align-content: flex-start;
+    }
 
+    form {
+        grid-row: span 2;
+        grid-column: span 1;
+        display: grid;
+        column-gap: 1em;
+        grid-template: auto auto auto auto/auto auto;
+    }
+
+    .email-label {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+
+    .contact-touch {
+        grid-column: 2;
+    }
+
+    .text-area-input {
+        grid-row: 4;
+        grid-column: span 2;
+    }
 
     .second-row-about {
         grid-column: 3;
     }
 
+    .btn-send {
+        grid-row: 5;
+        grid-column: 2;
+        width: 50%;
+        margin: auto;
+    }
 
 }
