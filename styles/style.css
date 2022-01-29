@@ -139,6 +139,20 @@ footer>img {
     padding: 1em;
 }
 
+form {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    row-gap: 0.75em;
+}
+input{
+    padding: 0.75em 0;
+}
+
+.btn-send{
+    background-color: yellow;
+    align-self: end;
+}
+
 @media only screen and (min-width: 600px) {
     ul {
         list-style: none;
